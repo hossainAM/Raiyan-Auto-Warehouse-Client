@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "category": "SEDAN",
+        "modelName": "Toyota Prias",
+        "image": "https://i.postimg.cc/KcCMH0V8/SEDAN-1.png",
+        "description": "Your vehicle of choice",
+        "price": 2600000,
+        "quantity": 6,
+        "supplier": "Maven"
+    },
+    {
+        "id": 2,
+        "category": "SUV",
+        "modelName": "Honda Vezel",
+        "image": "https://i.postimg.cc/9FT75G5t/SUV-2.png",
+        "description": "Your vehicle of choice",
+        "price": 2600000,
+        "quantity": 5,
+        "supplier": "Maven"
+    },
+    {
+        "id": 3,
+        "category": "COUPE",
+        "modelName": "Marcedes benz",
+        "image": "https://i.postimg.cc/7ZkTxfqv/COUPE.png",
+        "description": "Your vehicle of choice",
+        "price": 2600000,
+        "quantity": 2,
+        "supplier": "Maven"
+    },
+    {
+        "id": 4,
+        "category": "CONVERTIBLE",
+        "modelName": "Ford",
+        "image": "https://i.postimg.cc/43w4R3x1/CONVERTIBLE.png",
+        "description": "Your vehicle of choice",
+        "price": 2600000,
+        "quantity": 3,
+        "supplier": "Maven"
+    },
+    {
+        "id": 5,
+        "category": "HATCHBACK",
+        "modelName": "Nishan",
+        "image": "https://i.postimg.cc/V5ymWrKz/HATCHBACK.png",
+        "description": "Your vehicle of choice",
+        "price": 2600000,
+        "quantity": 2,
+        "supplier": "Maven"
+    },
+    {
+        "id": 6,
+        "category": "STATION WAGON",
+        "modelName": "Maruti",
+        "image": "https://i.postimg.cc/Pqdf7DTx/STATION-WAGON.png",
+        "description": "Your vehicle of choice",
+        "price": 2600000,
+        "quantity": 3,
+        "supplier": "Maven"
+    }
+]
