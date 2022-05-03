@@ -30,7 +30,7 @@ const Login = () => {
                         <div className='button inputBox'>
                             <input type="submit" value="Submit" />
                         </div>
-                        <div className='text signupText'>Don't have an account? <label for="">Signup now</label></div>
+                        <div className='text signupText'>Don't have an account? <label>Signup now</label></div>
                     </div>
                      <SocialLogIn></SocialLogIn>
                 </div>
