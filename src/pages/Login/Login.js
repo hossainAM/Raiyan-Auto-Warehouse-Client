@@ -1,15 +1,16 @@
 import React, { useEffect, useRef } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css'
 import Loader from '../../shared/Loader/Loader.js'
 import SocialLogIn from './SocialLogIn';
 
 const Login = () => {
-    const navigate = useNavigate();
     const emailRef = useRef('');
     const passwordRef = useRef('');
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const [
         signInWithEmailAndPassword,
@@ -18,6 +19,8 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
+    let from = location.state?.from?.pathname || "/";
+
     const handleLogin = (e) => {
         e.preventDefault();
         const email = emailRef.current.value;
@@ -25,14 +28,16 @@ const Login = () => {
         signInWithEmailAndPassword(email, password)
     }
 
-    useEffect(() => {
-        if(user) {
-        navigate('/')
-    }
-    }, [navigate, user])
+   useEffect(() => {
+		if(user) {
+		navigate(from, {
+			replace: true
+		});
+	}
+	}, [from, navigate, user])
 
     if(loading) {
-        <Loader></Loader>
+       return <Loader></Loader>
     }
 
     let errorMessage;
