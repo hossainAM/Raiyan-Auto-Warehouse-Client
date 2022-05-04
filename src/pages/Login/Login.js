@@ -1,8 +1,49 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 import './Login.css'
+import Loader from '../../shared/Loader/Loader.js'
 import SocialLogIn from './SocialLogIn';
 
 const Login = () => {
+    const navigate = useNavigate();
+    const emailRef = useRef('');
+    const passwordRef = useRef('');
+
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
+        signInWithEmailAndPassword(email, password)
+    }
+
+    useEffect(() => {
+        if(user) {
+        navigate('/')
+    }
+    }, [navigate, user])
+
+    if(loading) {
+        <Loader></Loader>
+    }
+
+    let errorMessage;
+    if (error) {
+      errorMessage = <p>Error: {error?.message}</p>
+    }
+
+    const handleSignUp = () => {
+        navigate('/signup')
+    }
+
     return (
         <>
         <section className='contentWrapper'>
@@ -13,26 +54,29 @@ const Login = () => {
                     <span className='text-1'>Raiyan Auto Warehouse</span>
                 </div>
             </div>
-            <form action="#">
+            <form onSubmit={handleLogin} action="#">
                 <div className='formContent'>
                     <div className='loginForm'>
                     <div className='title'>Login</div>
                     <div className='inputBoxes'>
                         <div className='inputBox'>
                             <i className='fas fa-envelope'></i>
-                            <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id="email" type="text" placeholder='Enter your email' required />
+                            <input ref={emailRef} className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id="email" type="text" placeholder='Enter your email' required />
                         </div>
                         <div className='inputBox'>
                             <i className='fas fa-lock'></i>
-                            <input className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id="password" type="password" placeholder='Enter your password' required />
+                            <input ref={passwordRef} className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id="password" type="password" placeholder='Enter your password' required />
                         </div>
                         <div className='text'><a href="#">Forgot password?</a></div>
                         <div className='button inputBox'>
                             <input type="submit" value="Submit" />
                         </div>
-                        <div className='text signupText'>Don't have an account? <label>Signup now</label></div>
+                        <div className='text signupText'>Don't have an account? <Link to="/signup" onClick={handleSignUp}>
+                        <label>Signup now</label>
+                        </Link></div>
                     </div>
                      <SocialLogIn></SocialLogIn>
+                     <p className='text-red-500 text-center'>{errorMessage}</p>
                 </div>
                 </div>
             </form>
