@@ -1,62 +1,380 @@
 [
     {
-        "id": 1,
         "category": "SEDAN",
         "modelName": "Toyota Prias",
         "image": "https://i.postimg.cc/KcCMH0V8/SEDAN-1.png",
-        "description": "Your vehicle of choice",
+        "description": "The Toyota Prius has 1 Petrol Engine on offer. The Petrol engine is 1798 cc =. It is available with Automatic transmission. Depending upon the variant and fuel type the Prius has a mileage of 26.27 kmpl & Ground clearance of Prius is 135mm. The Prius is a 5 seater 4 cylinder car and has length of 4540mm, width of 1760mm and a wheelbase of 2700mm.",
         "price": 2600000,
         "quantity": 6,
-        "supplier": "Maven"
+        "supplier": "Robert BoschGmbH"
     },
     {
-        "id": 2,
         "category": "SUV",
         "modelName": "Honda Vezel",
         "image": "https://i.postimg.cc/9FT75G5t/SUV-2.png",
-        "description": "Your vehicle of choice",
-        "price": 2600000,
-        "quantity": 5,
-        "supplier": "Maven"
+        "description": "The Vezel Hybrid is powered by a 1.5 l i-VTEC and an electric motor. With 112 kW (150 bhp) and 155 Nm of torque, the compact body is pushed with ease. Very smooth and fast dual-clutch gearbox, stylish interior trim, traction control, six airbags, keyless start, paddle shifters for the DCT gearbox, smart key, cruise control, electric parking brake, rear parking sensors and a comfortable leather steering wheel.",
+        "price": 4500000,
+        "quantity": 3,
+        "supplier": "Denso Corporation"
     },
     {
-        "id": 3,
         "category": "COUPE",
-        "modelName": "Marcedes benz",
+        "modelName": "Mercedes-AMG C43",
         "image": "https://i.postimg.cc/7ZkTxfqv/COUPE.png",
-        "description": "Your vehicle of choice",
-        "price": 2600000,
+        "description": "These two-door C43 models come standard with a 385-hp twin-turbo V-6 that provides ample power and sounds fantastic. All-wheel drive is standard, and the C43's handling is razor-sharp. The cabin is stylish, well-equipped, and comfortable for front-seat riders.",
+        "price": 8600000,
         "quantity": 2,
-        "supplier": "Maven"
+        "supplier": " Magna International Inc"
     },
     {
-        "id": 4,
         "category": "CONVERTIBLE",
-        "modelName": "Ford",
+        "modelName": "Ford Mustang",
         "image": "https://i.postimg.cc/43w4R3x1/CONVERTIBLE.png",
-        "description": "Your vehicle of choice",
-        "price": 2600000,
+        "description": "In 2018 Ford introduced new engine options, with a 2.3L turbocharged four-cylinder as the base. 2018 also brought an updated rear suspension to boost ride quality and the option of an automatic 10-speed. Standard features on the 2018 Ford Mustang Convertible include: 17-inch wheels, 4.2-inch center display screen, Six-speaker sound system, Bluetooth connectivity, Keyless ignition and entry",
+        "price": 12600000,
         "quantity": 3,
-        "supplier": "Maven"
+        "supplier": "Aisin Seiki Co. Ltd"
     },
     {
-        "id": 5,
         "category": "HATCHBACK",
-        "modelName": "Nishan",
+        "modelName": "Toyota Corolla",
         "image": "https://i.postimg.cc/V5ymWrKz/HATCHBACK.png",
-        "description": "Your vehicle of choice",
-        "price": 2600000,
-        "quantity": 2,
-        "supplier": "Maven"
+        "description": "The Toyota Corolla has 1 Petrol Engine on offer. The Petrol engine is 1794 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Corolla has a mileage of 11.3 to 13.4 kmpl & Ground clearance of Corolla is 170 mm. The Corolla is a 5 seater 4 cylinder car and has length of 4,530 mm, width of 1,705 mm and a wheelbase of 2,600 mm.",
+        "price": 2000000,
+        "quantity": 5,
+        "supplier": "Continental AG"
     },
     {
-        "id": 6,
         "category": "STATION WAGON",
-        "modelName": "Maruti",
+        "modelName": "Porsche Panamera Cross / Sport Turismo",
         "image": "https://i.postimg.cc/Pqdf7DTx/STATION-WAGON.png",
-        "description": "Your vehicle of choice",
+        "description": "The Sport Turismo is essentially a four-door Panamera with an elongated roof. The Sport Turismo wagon has a bigger cargo area that gives it an edge in terms of practicality. Gas engines run the gamut from a 325-hp twin-turbo V-6 to a 620-hp twin-turbo V-8, and hybrid variants range between 455 and 689 total horses. The 2022 Panamera Sport Turismo has poor outward visibility and some ergonomic foibles, but this station wagon hits the mark for high-class high performance.",
+        "price": 9800000,
+        "quantity": 2,
+        "supplier": "ZF Friedrichshafen AG"
+    },
+    {
+        "category": "SEDAN",
+        "modelName": "2013 CHRYSLER TOWN & COUNTRY SILVER",
+        "image": "https://i.postimg.cc/KcCMH0V8/SEDAN-1.png",
+        "description": "The Toyota Prius has 1 Petrol Engine on offer. The Petrol engine is 1798 cc =. It is available with Automatic transmission. Depending upon the variant and fuel type the Prius has a mileage of 26.27 kmpl & Ground clearance of Prius is 135mm. The Prius is a 5 seater 4 cylinder car and has length of 4540mm, width of 1760mm and a wheelbase of 2700mm.",
         "price": 2600000,
+        "quantity": 6,
+        "supplier": "Robert BoschGmbH"
+    },
+    {
+        "category": "SUV",
+        "modelName": "2014 KIA FORTE GREY",
+        "image": "https://i.postimg.cc/9FT75G5t/SUV-2.png",
+        "description": "The Vezel Hybrid is powered by a 1.5 l i-VTEC and an electric motor. With 112 kW (150 bhp) and 155 Nm of torque, the compact body is pushed with ease. Very smooth and fast dual-clutch gearbox, stylish interior trim, traction control, six airbags, keyless start, paddle shifters for the DCT gearbox, smart key, cruise control, electric parking brake, rear parking sensors and a comfortable leather steering wheel.",
+        "price": 4500000,
         "quantity": 3,
-        "supplier": "Maven"
+        "supplier": "Denso Corporation"
+    },
+    {
+        "category": "COUPE",
+        "modelName": "2014 GMC ACADIA SILVER",
+        "image": "https://i.postimg.cc/7ZkTxfqv/COUPE.png",
+        "description": "These two-door C43 models come standard with a 385-hp twin-turbo V-6 that provides ample power and sounds fantastic. All-wheel drive is standard, and the C43's handling is razor-sharp. The cabin is stylish, well-equipped, and comfortable for front-seat riders.",
+        "price": 8600000,
+        "quantity": 2,
+        "supplier": " Magna International Inc"
+    },
+    {
+        "category": "CONVERTIBLE",
+        "modelName": "2015 JEEP CHEROKEE WHITE",
+        "image": "https://i.postimg.cc/43w4R3x1/CONVERTIBLE.png",
+        "description": "In 2018 Ford introduced new engine options, with a 2.3L turbocharged four-cylinder as the base. 2018 also brought an updated rear suspension to boost ride quality and the option of an automatic 10-speed. Standard features on the 2018 Ford Mustang Convertible include: 17-inch wheels, 4.2-inch center display screen, Six-speaker sound system, Bluetooth connectivity, Keyless ignition and entry",
+        "price": 12600000,
+        "quantity": 3,
+        "supplier": "Aisin Seiki Co. Ltd"
+    },
+    {
+        "category": "HATCHBACK",
+        "modelName": "2016 FORD FUSION WHITE",
+        "image": "https://i.postimg.cc/V5ymWrKz/HATCHBACK.png",
+        "description": "The Toyota Corolla has 1 Petrol Engine on offer. The Petrol engine is 1794 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Corolla has a mileage of 11.3 to 13.4 kmpl & Ground clearance of Corolla is 170 mm. The Corolla is a 5 seater 4 cylinder car and has length of 4,530 mm, width of 1,705 mm and a wheelbase of 2,600 mm.",
+        "price": 2000000,
+        "quantity": 5,
+        "supplier": "Continental AG"
+    },
+    {
+        "category": "STATION WAGON",
+        "modelName": "2012 NISSAN MURANO GREY",
+        "image": "https://i.postimg.cc/Pqdf7DTx/STATION-WAGON.png",
+        "description": "The Sport Turismo is essentially a four-door Panamera with an elongated roof. The Sport Turismo wagon has a bigger cargo area that gives it an edge in terms of practicality. Gas engines run the gamut from a 325-hp twin-turbo V-6 to a 620-hp twin-turbo V-8, and hybrid variants range between 455 and 689 total horses. The 2022 Panamera Sport Turismo has poor outward visibility and some ergonomic foibles, but this station wagon hits the mark for high-class high performance.",
+        "price": 9800000,
+        "quantity": 2,
+        "supplier": "ZF Friedrichshafen AG"
+    },
+    {
+        "category": "SEDAN",
+        "modelName": "2016 CHRYSLER 200 BLACK",
+        "image": "https://i.postimg.cc/KcCMH0V8/SEDAN-1.png",
+        "description": "The Toyota Prius has 1 Petrol Engine on offer. The Petrol engine is 1798 cc =. It is available with Automatic transmission. Depending upon the variant and fuel type the Prius has a mileage of 26.27 kmpl & Ground clearance of Prius is 135mm. The Prius is a 5 seater 4 cylinder car and has length of 4540mm, width of 1760mm and a wheelbase of 2700mm.",
+        "price": 2600000,
+        "quantity": 6,
+        "supplier": "Robert BoschGmbH"
+    },
+    {
+        "category": "SUV",
+        "modelName": "2014 HYUNDAI TUCSON RED",
+        "image": "https://i.postimg.cc/9FT75G5t/SUV-2.png",
+        "description": "The Vezel Hybrid is powered by a 1.5 l i-VTEC and an electric motor. With 112 kW (150 bhp) and 155 Nm of torque, the compact body is pushed with ease. Very smooth and fast dual-clutch gearbox, stylish interior trim, traction control, six airbags, keyless start, paddle shifters for the DCT gearbox, smart key, cruise control, electric parking brake, rear parking sensors and a comfortable leather steering wheel.",
+        "price": 4500000,
+        "quantity": 3,
+        "supplier": "Denso Corporation"
+    },
+    {
+        "category": "COUPE",
+        "modelName": "2015 MITSUBISHI OUTLANDER BLACK",
+        "image": "https://i.postimg.cc/7ZkTxfqv/COUPE.png",
+        "description": "These two-door C43 models come standard with a 385-hp twin-turbo V-6 that provides ample power and sounds fantastic. All-wheel drive is standard, and the C43's handling is razor-sharp. The cabin is stylish, well-equipped, and comfortable for front-seat riders.",
+        "price": 8600000,
+        "quantity": 2,
+        "supplier": " Magna International Inc"
+    },
+    {
+        "category": "CONVERTIBLE",
+        "modelName": "2017 NISSAN ROGUE WHITE",
+        "image": "https://i.postimg.cc/43w4R3x1/CONVERTIBLE.png",
+        "description": "In 2018 Ford introduced new engine options, with a 2.3L turbocharged four-cylinder as the base. 2018 also brought an updated rear suspension to boost ride quality and the option of an automatic 10-speed. Standard features on the 2018 Ford Mustang Convertible include: 17-inch wheels, 4.2-inch center display screen, Six-speaker sound system, Bluetooth connectivity, Keyless ignition and entry",
+        "price": 12600000,
+        "quantity": 3,
+        "supplier": "Aisin Seiki Co. Ltd"
+    },
+    {
+        "category": "HATCHBACK",
+        "modelName": "2013 HYUNDAI SONATA BLUE",
+        "image": "https://i.postimg.cc/V5ymWrKz/HATCHBACK.png",
+        "description": "The Toyota Corolla has 1 Petrol Engine on offer. The Petrol engine is 1794 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Corolla has a mileage of 11.3 to 13.4 kmpl & Ground clearance of Corolla is 170 mm. The Corolla is a 5 seater 4 cylinder car and has length of 4,530 mm, width of 1,705 mm and a wheelbase of 2,600 mm.",
+        "price": 2000000,
+        "quantity": 5,
+        "supplier": "Continental AG"
+    },
+    {
+        "category": "STATION WAGON",
+        "modelName": "2013 NISSAN JUKE GREY",
+        "image": "https://i.postimg.cc/Pqdf7DTx/STATION-WAGON.png",
+        "description": "The Sport Turismo is essentially a four-door Panamera with an elongated roof. The Sport Turismo wagon has a bigger cargo area that gives it an edge in terms of practicality. Gas engines run the gamut from a 325-hp twin-turbo V-6 to a 620-hp twin-turbo V-8, and hybrid variants range between 455 and 689 total horses. The 2022 Panamera Sport Turismo has poor outward visibility and some ergonomic foibles, but this station wagon hits the mark for high-class high performance.",
+        "price": 9800000,
+        "quantity": 2,
+        "supplier": "ZF Friedrichshafen AG"
+    },
+    {
+        "category": "SEDAN",
+        "modelName": "FORD TAURUS BLACK",
+        "image": "https://i.postimg.cc/KcCMH0V8/SEDAN-1.png",
+        "description": "The Toyota Prius has 1 Petrol Engine on offer. The Petrol engine is 1798 cc =. It is available with Automatic transmission. Depending upon the variant and fuel type the Prius has a mileage of 26.27 kmpl & Ground clearance of Prius is 135mm. The Prius is a 5 seater 4 cylinder car and has length of 4540mm, width of 1760mm and a wheelbase of 2700mm.",
+        "price": 2600000,
+        "quantity": 6,
+        "supplier": "Robert BoschGmbH"
+    },
+    {
+        "category": "SUV",
+        "modelName": "2016 JEEP COMPASS GREY",
+        "image": "https://i.postimg.cc/9FT75G5t/SUV-2.png",
+        "description": "The Vezel Hybrid is powered by a 1.5 l i-VTEC and an electric motor. With 112 kW (150 bhp) and 155 Nm of torque, the compact body is pushed with ease. Very smooth and fast dual-clutch gearbox, stylish interior trim, traction control, six airbags, keyless start, paddle shifters for the DCT gearbox, smart key, cruise control, electric parking brake, rear parking sensors and a comfortable leather steering wheel.",
+        "price": 4500000,
+        "quantity": 3,
+        "supplier": "Denso Corporation"
+    },
+    {
+        "category": "COUPE",
+        "modelName": "2013 NISSAN JUKE GREY",
+        "image": "https://i.postimg.cc/7ZkTxfqv/COUPE.png",
+        "description": "These two-door C43 models come standard with a 385-hp twin-turbo V-6 that provides ample power and sounds fantastic. All-wheel drive is standard, and the C43's handling is razor-sharp. The cabin is stylish, well-equipped, and comfortable for front-seat riders.",
+        "price": 8600000,
+        "quantity": 2,
+        "supplier": " Magna International Inc"
+    },
+    {
+        "category": "CONVERTIBLE",
+        "modelName": "2013 CHEVROLET TAHOE WHITE",
+        "image": "https://i.postimg.cc/43w4R3x1/CONVERTIBLE.png",
+        "description": "In 2018 Ford introduced new engine options, with a 2.3L turbocharged four-cylinder as the base. 2018 also brought an updated rear suspension to boost ride quality and the option of an automatic 10-speed. Standard features on the 2018 Ford Mustang Convertible include: 17-inch wheels, 4.2-inch center display screen, Six-speaker sound system, Bluetooth connectivity, Keyless ignition and entry",
+        "price": 12600000,
+        "quantity": 3,
+        "supplier": "Aisin Seiki Co. Ltd"
+    },
+    {
+        "category": "HATCHBACK",
+        "modelName": "2011 LINCOLN NAVIGATOR WHITE",
+        "image": "https://i.postimg.cc/V5ymWrKz/HATCHBACK.png",
+        "description": "The Toyota Corolla has 1 Petrol Engine on offer. The Petrol engine is 1794 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Corolla has a mileage of 11.3 to 13.4 kmpl & Ground clearance of Corolla is 170 mm. The Corolla is a 5 seater 4 cylinder car and has length of 4,530 mm, width of 1,705 mm and a wheelbase of 2,600 mm.",
+        "price": 2000000,
+        "quantity": 5,
+        "supplier": "Continental AG"
+    },
+    {
+        "category": "STATION WAGON",
+        "modelName": "Porsche Panamera Cross / Sport Turismo",
+        "image": "https://i.postimg.cc/Pqdf7DTx/STATION-WAGON.png",
+        "description": "The Sport Turismo is essentially a four-door Panamera with an elongated roof. The Sport Turismo wagon has a bigger cargo area that gives it an edge in terms of practicality. Gas engines run the gamut from a 325-hp twin-turbo V-6 to a 620-hp twin-turbo V-8, and hybrid variants range between 455 and 689 total horses. The 2022 Panamera Sport Turismo has poor outward visibility and some ergonomic foibles, but this station wagon hits the mark for high-class high performance.",
+        "price": 9800000,
+        "quantity": 2,
+        "supplier": "ZF Friedrichshafen AG"
+    },
+    {
+        "category": "SEDAN",
+        "modelName": "2012 FORD FLEX BLUE",
+        "image": "https://i.postimg.cc/KcCMH0V8/SEDAN-1.png",
+        "description": "The Toyota Prius has 1 Petrol Engine on offer. The Petrol engine is 1798 cc =. It is available with Automatic transmission. Depending upon the variant and fuel type the Prius has a mileage of 26.27 kmpl & Ground clearance of Prius is 135mm. The Prius is a 5 seater 4 cylinder car and has length of 4540mm, width of 1760mm and a wheelbase of 2700mm.",
+        "price": 2600000,
+        "quantity": 6,
+        "supplier": "Robert BoschGmbH"
+    },
+    {
+        "category": "SUV",
+        "modelName": "2013 CHEVROLET TAHOE BLACK",
+        "image": "https://i.postimg.cc/9FT75G5t/SUV-2.png",
+        "description": "The Vezel Hybrid is powered by a 1.5 l i-VTEC and an electric motor. With 112 kW (150 bhp) and 155 Nm of torque, the compact body is pushed with ease. Very smooth and fast dual-clutch gearbox, stylish interior trim, traction control, six airbags, keyless start, paddle shifters for the DCT gearbox, smart key, cruise control, electric parking brake, rear parking sensors and a comfortable leather steering wheel.",
+        "price": 4500000,
+        "quantity": 3,
+        "supplier": "Denso Corporation"
+    },
+    {
+        "category": "COUPE",
+        "modelName": "2014 LINCOLN MKX WHITE",
+        "image": "https://i.postimg.cc/7ZkTxfqv/COUPE.png",
+        "description": "These two-door C43 models come standard with a 385-hp twin-turbo V-6 that provides ample power and sounds fantastic. All-wheel drive is standard, and the C43's handling is razor-sharp. The cabin is stylish, well-equipped, and comfortable for front-seat riders.",
+        "price": 8600000,
+        "quantity": 2,
+        "supplier": " Magna International Inc"
+    },
+    {
+        "category": "CONVERTIBLE",
+        "modelName": "2014 NISSAN PATHFIDER WHITE",
+        "image": "https://i.postimg.cc/43w4R3x1/CONVERTIBLE.png",
+        "description": "In 2018 Ford introduced new engine options, with a 2.3L turbocharged four-cylinder as the base. 2018 also brought an updated rear suspension to boost ride quality and the option of an automatic 10-speed. Standard features on the 2018 Ford Mustang Convertible include: 17-inch wheels, 4.2-inch center display screen, Six-speaker sound system, Bluetooth connectivity, Keyless ignition and entry",
+        "price": 12600000,
+        "quantity": 3,
+        "supplier": "Aisin Seiki Co. Ltd"
+    },
+    {
+        "category": "HATCHBACK",
+        "modelName": "2016 NISSAN ROGUE BLUE",
+        "image": "https://i.postimg.cc/V5ymWrKz/HATCHBACK.png",
+        "description": "The Toyota Corolla has 1 Petrol Engine on offer. The Petrol engine is 1794 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Corolla has a mileage of 11.3 to 13.4 kmpl & Ground clearance of Corolla is 170 mm. The Corolla is a 5 seater 4 cylinder car and has length of 4,530 mm, width of 1,705 mm and a wheelbase of 2,600 mm.",
+        "price": 2000000,
+        "quantity": 5,
+        "supplier": "Continental AG"
+    },
+    {
+        "category": "STATION WAGON",
+        "modelName": "2011 CHEVROLET TAHOE RED",
+        "image": "https://i.postimg.cc/Pqdf7DTx/STATION-WAGON.png",
+        "description": "The Sport Turismo is essentially a four-door Panamera with an elongated roof. The Sport Turismo wagon has a bigger cargo area that gives it an edge in terms of practicality. Gas engines run the gamut from a 325-hp twin-turbo V-6 to a 620-hp twin-turbo V-8, and hybrid variants range between 455 and 689 total horses. The 2022 Panamera Sport Turismo has poor outward visibility and some ergonomic foibles, but this station wagon hits the mark for high-class high performance.",
+        "price": 9800000,
+        "quantity": 2,
+        "supplier": "ZF Friedrichshafen AG"
+    },
+    {
+        "category": "SEDAN",
+        "modelName": "2012 ACURA MDX WHITE",
+        "image": "https://i.postimg.cc/KcCMH0V8/SEDAN-1.png",
+        "description": "The Toyota Prius has 1 Petrol Engine on offer. The Petrol engine is 1798 cc =. It is available with Automatic transmission. Depending upon the variant and fuel type the Prius has a mileage of 26.27 kmpl & Ground clearance of Prius is 135mm. The Prius is a 5 seater 4 cylinder car and has length of 4540mm, width of 1760mm and a wheelbase of 2700mm.",
+        "price": 2600000,
+        "quantity": 6,
+        "supplier": "Robert BoschGmbH"
+    },
+    {
+        "category": "SUV",
+        "modelName": "2017 NISSAN ALTIMA BLACK",
+        "image": "https://i.postimg.cc/9FT75G5t/SUV-2.png",
+        "description": "The Vezel Hybrid is powered by a 1.5 l i-VTEC and an electric motor. With 112 kW (150 bhp) and 155 Nm of torque, the compact body is pushed with ease. Very smooth and fast dual-clutch gearbox, stylish interior trim, traction control, six airbags, keyless start, paddle shifters for the DCT gearbox, smart key, cruise control, electric parking brake, rear parking sensors and a comfortable leather steering wheel.",
+        "price": 4500000,
+        "quantity": 3,
+        "supplier": "Denso Corporation"
+    },
+    {
+        "category": "COUPE",
+        "modelName": "2012 MAZDA CX-9 BLUE",
+        "image": "https://i.postimg.cc/7ZkTxfqv/COUPE.png",
+        "description": "These two-door C43 models come standard with a 385-hp twin-turbo V-6 that provides ample power and sounds fantastic. All-wheel drive is standard, and the C43's handling is razor-sharp. The cabin is stylish, well-equipped, and comfortable for front-seat riders.",
+        "price": 8600000,
+        "quantity": 2,
+        "supplier": " Magna International Inc"
+    },
+    {
+        "category": "CONVERTIBLE",
+        "modelName": "2014 VOLKSWAGEN PASSAT BLUE",
+        "image": "https://i.postimg.cc/43w4R3x1/CONVERTIBLE.png",
+        "description": "In 2018 Ford introduced new engine options, with a 2.3L turbocharged four-cylinder as the base. 2018 also brought an updated rear suspension to boost ride quality and the option of an automatic 10-speed. Standard features on the 2018 Ford Mustang Convertible include: 17-inch wheels, 4.2-inch center display screen, Six-speaker sound system, Bluetooth connectivity, Keyless ignition and entry",
+        "price": 12600000,
+        "quantity": 3,
+        "supplier": "Aisin Seiki Co. Ltd"
+    },
+    {
+        "category": "HATCHBACK",
+        "modelName": "2016 NISSAN PATHFINDER BLACK",
+        "image": "https://i.postimg.cc/V5ymWrKz/HATCHBACK.png",
+        "description": "The Toyota Corolla has 1 Petrol Engine on offer. The Petrol engine is 1794 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Corolla has a mileage of 11.3 to 13.4 kmpl & Ground clearance of Corolla is 170 mm. The Corolla is a 5 seater 4 cylinder car and has length of 4,530 mm, width of 1,705 mm and a wheelbase of 2,600 mm.",
+        "price": 2000000,
+        "quantity": 5,
+        "supplier": "Continental AG"
+    },
+    {
+        "category": "STATION WAGON",
+        "modelName": "2012 HONDA CROSSTOUR BLACK",
+        "image": "https://i.postimg.cc/Pqdf7DTx/STATION-WAGON.png",
+        "description": "The Sport Turismo is essentially a four-door Panamera with an elongated roof. The Sport Turismo wagon has a bigger cargo area that gives it an edge in terms of practicality. Gas engines run the gamut from a 325-hp twin-turbo V-6 to a 620-hp twin-turbo V-8, and hybrid variants range between 455 and 689 total horses. The 2022 Panamera Sport Turismo has poor outward visibility and some ergonomic foibles, but this station wagon hits the mark for high-class high performance.",
+        "price": 9800000,
+        "quantity": 2,
+        "supplier": "ZF Friedrichshafen AG"
+    },
+    {
+        "category": "SEDAN",
+        "modelName": "2013 CHEVROLET CAMARO YELLOW",
+        "image": "https://i.postimg.cc/KcCMH0V8/SEDAN-1.png",
+        "description": "The Toyota Prius has 1 Petrol Engine on offer. The Petrol engine is 1798 cc =. It is available with Automatic transmission. Depending upon the variant and fuel type the Prius has a mileage of 26.27 kmpl & Ground clearance of Prius is 135mm. The Prius is a 5 seater 4 cylinder car and has length of 4540mm, width of 1760mm and a wheelbase of 2700mm.",
+        "price": 2600000,
+        "quantity": 6,
+        "supplier": "Robert BoschGmbH"
+    },
+    {
+        "category": "SUV",
+        "modelName": "2012 INFINITI G37 RED",
+        "image": "https://i.postimg.cc/9FT75G5t/SUV-2.png",
+        "description": "The Vezel Hybrid is powered by a 1.5 l i-VTEC and an electric motor. With 112 kW (150 bhp) and 155 Nm of torque, the compact body is pushed with ease. Very smooth and fast dual-clutch gearbox, stylish interior trim, traction control, six airbags, keyless start, paddle shifters for the DCT gearbox, smart key, cruise control, electric parking brake, rear parking sensors and a comfortable leather steering wheel.",
+        "price": 4500000,
+        "quantity": 3,
+        "supplier": "Denso Corporation"
+    },
+    {
+        "category": "COUPE",
+        "modelName": "2012 GMC SIERRA WHITE",
+        "image": "https://i.postimg.cc/7ZkTxfqv/COUPE.png",
+        "description": "These two-door C43 models come standard with a 385-hp twin-turbo V-6 that provides ample power and sounds fantastic. All-wheel drive is standard, and the C43's handling is razor-sharp. The cabin is stylish, well-equipped, and comfortable for front-seat riders.",
+        "price": 8600000,
+        "quantity": 2,
+        "supplier": " Magna International Inc"
+    },
+    {
+        "category": "CONVERTIBLE",
+        "modelName": "2014 MAZDA CX-9 WHITE",
+        "image": "https://i.postimg.cc/43w4R3x1/CONVERTIBLE.png",
+        "description": "In 2018 Ford introduced new engine options, with a 2.3L turbocharged four-cylinder as the base. 2018 also brought an updated rear suspension to boost ride quality and the option of an automatic 10-speed. Standard features on the 2018 Ford Mustang Convertible include: 17-inch wheels, 4.2-inch center display screen, Six-speaker sound system, Bluetooth connectivity, Keyless ignition and entry",
+        "price": 12600000,
+        "quantity": 3,
+        "supplier": "Aisin Seiki Co. Ltd"
+    },
+    {
+        "category": "HATCHBACK",
+        "modelName": "2012 FORD EXPLORER BLUE",
+        "image": "https://i.postimg.cc/V5ymWrKz/HATCHBACK.png",
+        "description": "The Toyota Corolla has 1 Petrol Engine on offer. The Petrol engine is 1794 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Corolla has a mileage of 11.3 to 13.4 kmpl & Ground clearance of Corolla is 170 mm. The Corolla is a 5 seater 4 cylinder car and has length of 4,530 mm, width of 1,705 mm and a wheelbase of 2,600 mm.",
+        "price": 2000000,
+        "quantity": 5,
+        "supplier": "Continental AG"
+    },
+    {
+        "category": "STATION WAGON",
+        "modelName": "2011 CHEVROLET TAHOE GREY",
+        "image": "https://i.postimg.cc/Pqdf7DTx/STATION-WAGON.png",
+        "description": "The Sport Turismo is essentially a four-door Panamera with an elongated roof. The Sport Turismo wagon has a bigger cargo area that gives it an edge in terms of practicality. Gas engines run the gamut from a 325-hp twin-turbo V-6 to a 620-hp twin-turbo V-8, and hybrid variants range between 455 and 689 total horses. The 2022 Panamera Sport Turismo has poor outward visibility and some ergonomic foibles, but this station wagon hits the mark for high-class high performance.",
+        "price": 9800000,
+        "quantity": 2,
+        "supplier": "ZF Friedrichshafen AG"
     }
 ]
