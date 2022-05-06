@@ -8,6 +8,8 @@ import SignUp from './pages/SignUp/SignUp'
 import InventoryDetails from './pages/Inventory/InventoryDetails'
 import ManageInventory from './pages/ManageInventory/ManageInventory';
 import RequireAuth from './pages/Login/RequireAuth'
+import AddItem from './pages/AddItem/AddItem'
+import MyItems from './pages/MyItems/MyItems'
 
 const App = () => {
   return (
@@ -23,11 +25,11 @@ const App = () => {
             </RequireAuth>}/>
           <Route path='/additems' element={
             <RequireAuth>
-              <InventoryDetails/>
+              <AddItem/>
             </RequireAuth>}/>
           <Route path='/myitems' element={
             <RequireAuth>
-              <InventoryDetails/>
+              <MyItems/>
             </RequireAuth>}/>
           <Route path='/blog' element={<Blog/>}/>
           <Route path='/login' element={<Login/>}/>

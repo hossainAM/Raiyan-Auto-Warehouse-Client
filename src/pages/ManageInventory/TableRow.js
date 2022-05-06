@@ -14,6 +14,7 @@ const TableRow = ({ item, column }) => {
             })
             .then(res => res.json())
             .then(data => {
+                console.log(id)
                 const rests = items.filter(item => item._id !== id);
                 setItems(rests);
             })
