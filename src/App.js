@@ -16,11 +16,19 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/home' element={<Home/>}/>
+          <Route path='/manageinventory' element={<ManageInventory/>}/>
           <Route path='/inventory/:id' element={
             <RequireAuth>
               <InventoryDetails/>
             </RequireAuth>}/>
-          <Route path='/manageinventory' element={<ManageInventory/>}/>
+          <Route path='/additems' element={
+            <RequireAuth>
+              <InventoryDetails/>
+            </RequireAuth>}/>
+          <Route path='/myitems' element={
+            <RequireAuth>
+              <InventoryDetails/>
+            </RequireAuth>}/>
           <Route path='/blog' element={<Blog/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<SignUp/>}/>

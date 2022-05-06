@@ -21,6 +21,11 @@ const Header = () => {
                 <NavLink style={({ isActive }) => isActive ? {textDecoration: 'underline'} : undefined} to="/blog" className="mr-5 text-gray-100 hover:text-gray-900">Blog</NavLink>
                 </nav>
                 <NavLink style={({ isActive }) => isActive ? {textDecoration: 'underline'} : undefined} to="/manageinventory" className="mr-5 text-gray-100 hover:text-gray-900">Manage Inventory</NavLink>
+                {user && <>
+                <NavLink style={({ isActive }) => isActive ? {textDecoration: 'underline'} : undefined} to="/additems" className="mr-5 text-gray-100 hover:text-gray-900">Add Items</NavLink>
+                <NavLink style={({ isActive }) => isActive ? {textDecoration: 'underline'} : undefined} to="/myitems" className="mr-5 text-gray-100 hover:text-gray-900">My Items</NavLink>
+                </>
+                }
                 {user ? 
                 <NavLink style={({ isActive }) => isActive ? {textDecoration: 'underline'} : undefined} onClick={handleSignOut} to="/login" className="mr-5 text-gray-100 hover:text-gray-900">Logout
                 </NavLink>
