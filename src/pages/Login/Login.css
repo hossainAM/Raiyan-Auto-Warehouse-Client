@@ -172,6 +172,15 @@ form .formContent label{
 form .formContent label:hover{
     text-decoration: underline;
 }
+form .formContent .btn{
+    color: #4d0e9f;
+    font: bold;
+    cursor: pointer;
+}
+
+form .formContent .btn:hover{
+    text-decoration: underline;
+}
 
 form .formContent .loginText{
     text-align: center;

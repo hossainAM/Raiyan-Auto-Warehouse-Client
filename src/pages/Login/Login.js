@@ -1,16 +1,19 @@
 import React, { useEffect, useRef } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css'
 import Loader from '../../shared/Loader/Loader.js'
 import SocialLogIn from './SocialLogIn';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
     const location = useLocation();
+
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth); 
 
     const [
         signInWithEmailAndPassword,
@@ -36,7 +39,7 @@ const Login = () => {
 	}
 	}, [from, navigate, user])
 
-    if(loading) {
+    if(loading || sending) {
        return <Loader></Loader>
     }
 
@@ -47,6 +50,18 @@ const Login = () => {
 
     const handleSignUp = () => {
         navigate('/signup')
+    }
+
+    //Reset Password
+    const handlePasswordReset = async () => {
+        const email = emailRef.current.value;
+        if(email){
+              await sendPasswordResetEmail(email);
+              toast('Sent email');
+        }
+        else{
+            toast('Please Provide your Email Address')
+        }
     }
 
     return (
@@ -72,7 +87,9 @@ const Login = () => {
                             <i className='fas fa-lock'></i>
                             <input ref={passwordRef} className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id="password" type="password" placeholder='Enter your password' required />
                         </div>
-                        <div className='text'><a href="#">Forgot password?</a></div>
+                        <div className='text'>
+                            <p className='text-center mt-2'>Forgot Password? <button onClick={handlePasswordReset} className='btn btn-link '>Reset Password</button></p>
+                        </div>
                         <div className='button inputBox'>
                             <input type="submit" value="Submit" />
                         </div>
@@ -84,6 +101,7 @@ const Login = () => {
                      <p className='text-red-500 text-center'>{errorMessage}</p>
                 </div>
                 </div>
+                <Toaster/>
             </form>
         </div>
         </section>
