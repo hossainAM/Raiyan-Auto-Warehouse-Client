@@ -9,7 +9,7 @@ const MyItems = () => {
     useEffect(() => {
         const email = user.email;
         const getItems = async() => {
-            const url = `http://localhost:5000/auto?email=${email}`
+            const url = `http://localhost:5000/newauto?email=${email}`
             const { data } = await axios.get(url, {
                 headers: {
                     authorization: `Bearer ${localStorage.getItem('accessToken')}`
