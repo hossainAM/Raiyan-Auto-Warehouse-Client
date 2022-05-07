@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 const MyItems = () => {
+    const [user] = useAuthState(auth);
+    const [items, setItems] = useState([]);
+    useEffect(() => {
+        const email = user.email;
+        const getItems = async() => {
+            const url = `http://localhost:5000/auto?email=${email}`
+            const { data } = await axios.get(url);
+            setItems(data);
+        }
+        getItems();
+
+    }, [user]);
     return (
         <div>
-            <h1>My Items</h1>
+            <h1>My Items: {items.length}</h1>
         </div>
     );
 };

@@ -1,16 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import useAutoDetails from '../../CustomHooks/useAutoDetails';
 
 const InventoryDetails = () => {
     const {id} = useParams();
-    const [item, setItem] = useState({});
+    const [item, setItem] = useAutoDetails(id);
+    // const [item, setItem] = useState({});
 
-    useEffect(() => {
-        const url = `http://localhost:5000/auto/${id}`
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setItem(data))
-    }, [id]);
+    // useEffect(() => {
+    //     const url = `http://localhost:5000/auto/${id}`
+    //     fetch(url)
+    //         .then(res => res.json())
+    //         .then(data => setItem(data))
+    // }, [id]);
 
     return (
         <>
@@ -26,7 +28,8 @@ const InventoryDetails = () => {
                 <p className="mb-8 leading-relaxed">{item.description}</p>
                 <p className="title-font sm:text-2xl text-xl mb-4 font-medium text-gray-900">Price: <span className="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900">BDT{item.price}</span></p>
                 <p className="title-font sm:text-2xl text-xl mb-4 font-medium text-gray-900">Supplier: <span className="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900">{item.supplier}</span></p>
-                <p className="title-font sm:text-2xl text-xl mb-4 font-medium text-gray-900"><span className="title-font sm:text-3xl text-2l mb-4 font-bold text-gray-900">{item.quantity} </span>in Stock</p>
+                <p className="title-font sm:text-2xl text-xl mb-4 font-medium text-gray-900"><span className="title-font sm:text-3xl text-2xl mb-4 font-bold text-gray-900">{item.quantity} </span>in Stock</p>
+                <p className="title-font sm:text-2xl text-xl mb-4 font-medium text-gray-900"><span className="title-font sm:text-3xl text-2xl mb-4 font-bold text-gray-900">2</span>Sold Out</p>
                 <div className="flex justify-center">
                     <button className="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg mr-3">Delivered</button>
                     <form action="#">
@@ -35,6 +38,8 @@ const InventoryDetails = () => {
                      <button className="ml-3 inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg mr-3">Submit</button>
                 </div>
                 </div>
+            </div>
+            <div>
             </div>
             {/* Manage Inventory */}
             <div className='flex justify-center'>
@@ -46,6 +51,7 @@ const InventoryDetails = () => {
 };
 
 export default InventoryDetails;
+
 
 
 

@@ -68,13 +68,13 @@ const SignUp = () => {
                     <div className='title'>Signup</div>
                     <div className='inputBoxes'>
                         <div className='inputBox'>
-                            <i className='fas fa-envelope'></i>
+                            <i className='fas fa-user'></i>
                             <input ref={nameRef} className = 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
                             id="name" type="text" placeholder='
                             Enter your name' required />
                         </div>
                         <div className='inputBox'>
-                            <i className='fas fa-user'></i>
+                            <i className='fas fa-envelope'></i>
                             <input ref={emailRef} className = 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
                             id="email" type="text" placeholder='
                             Enter your email' required />
