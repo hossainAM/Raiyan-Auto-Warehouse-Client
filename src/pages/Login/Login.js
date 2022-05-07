@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import axios from 'axios';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import auth from '../../firebase.init';
@@ -24,20 +25,26 @@ const Login = () => {
 
     let from = location.state?.from?.pathname || "/";
 
-    const handleLogin = (e) => {
+    const handleLogin = async (e) => {
         e.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        signInWithEmailAndPassword(email, password)
+
+        await signInWithEmailAndPassword(email, password);
+        const {
+            data
+        } = await axios.post('http://localhost:5000/login', {email});
+        localStorage.setItem('accessToken', data.accessToken);
+        navigate(from, { replace: true });
     }
 
-   useEffect(() => {
-		if(user) {
-		navigate(from, {
-			replace: true
-		});
-	}
-	}, [from, navigate, user])
+//    useEffect(() => {
+// 		if(user) {
+// 		navigate(from, {
+// 			replace: true
+// 		});
+// 	}
+// 	}, [from, navigate, user])
 
     if(loading || sending) {
        return <Loader></Loader>
