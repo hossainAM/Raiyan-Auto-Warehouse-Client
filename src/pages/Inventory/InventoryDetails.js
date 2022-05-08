@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import useAutoDetails from '../../CustomHooks/useAutoDetails';
 
 const InventoryDetails = () => {
     const {id} = useParams();
-    const [item, setItem] = useAutoDetails(id);
+     const [item, setItem] = useState({});
+
+     useEffect(() => {
+         const url = `https://arcane-reaches-25713.herokuapp.com/auto/${id}`
+         fetch(url)
+             .then(res => res.json())
+             .then(data => setItem(data))
+     }, [id]);
 
     return (
         <>
