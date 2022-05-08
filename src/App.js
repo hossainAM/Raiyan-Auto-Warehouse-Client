@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Header from './shared/Header/Header'
 import Home from './pages/Home/Home'
@@ -13,6 +13,7 @@ import AddInventoryItems from './pages/AddInventoryItems/AddInventoryItems'
 import NotFound from './pages/NotFound/NotFound'
 
 const App = () => {
+
   return (
     <>
       <Header></Header>

@@ -8,7 +8,9 @@ const useAutos = () => {
     useEffect(() => {
         fetch('https://arcane-reaches-25713.herokuapp.com/auto')
             .then(res => res.json())
-            .then(data => setItems(data))
+            .then(data => {
+                setItems(data)
+            })
     }, []);
 
     return [items, setItems];

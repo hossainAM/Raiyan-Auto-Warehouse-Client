@@ -1,18 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import useAutos from '../../CustomHooks/useAutos';
+import Loader from '../../shared/Loader/Loader';
 import InventoryItemDetails from './InventoryItemDetails';
 
 const InventoryItem = () => {
-   const [items] = useAutos([]);
+   const [items, setItems] = useState([]);
+   const [isLoading, setIsLoading] = useState(false);
+   useEffect(() => {
+       setIsLoading(true);
+       fetch('https://arcane-reaches-25713.herokuapp.com/auto')
+           .then(res => res.json())
+           .then(data => {
+               setItems(data)
+               setIsLoading(false) 
+            })
+   }, []);
 
-    // console.log(items)
     return (
         <section className="text-gray-600 body-font">
             <h1 className='text-3xl mt-8 text-center'>Featured Categories</h1>
             <div className="container px-5 py-12 mx-auto">
                 <div className="flex flex-wrap -mx-4 -mb-10 text-center">
                     {
+                        isLoading ? <Loader/>
+                        :
                         items.slice(0, 6).map(item => <InventoryItemDetails key={item._id} item={item}></InventoryItemDetails>)
                     }
                 </div>
