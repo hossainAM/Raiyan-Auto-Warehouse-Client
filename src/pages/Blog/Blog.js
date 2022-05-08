@@ -1,7 +1,9 @@
 import React from 'react';
+import Footer from '../../shared/Footer/Footer'
 
 const Blog = () => {
     return (
+        <>
         <section className="text-gray-600 body-font overflow-hidden">
         <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-wrap -m-12">
@@ -104,6 +106,8 @@ const Blog = () => {
             </div>
         </div>
         </section>
+        <Footer></Footer>
+        </>
     );
 };
 

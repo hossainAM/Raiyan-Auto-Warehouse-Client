@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import MyItemDetails from './MyItemDetails';
 
 const MyItems = () => {
     const [user] = useAuthState(auth);
@@ -22,7 +23,11 @@ const MyItems = () => {
     }, [user]);
     return (
         <div>
-            <h1>My Items: {items.length}</h1>
+            <div className = 'container grid sm:grid-cols-3 gap-5 mx-auto mt-6'>
+                {
+                items.map(item => <MyItemDetails key={item._id} item={item}></MyItemDetails>)
+                }
+            </div>
         </div>
     );
 };

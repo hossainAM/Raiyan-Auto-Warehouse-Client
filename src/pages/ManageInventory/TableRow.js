@@ -7,7 +7,7 @@ const TableRow = ({ item, column }) => {
          fetch('https://arcane-reaches-25713.herokuapp.com/auto')
              .then(res => res.json())
              .then(data => setItems(data))
-     }, []);
+     }, [items]);
     
      //Remove item
     const handleRemove = id => {

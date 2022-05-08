@@ -6,25 +6,6 @@ const InventoryDetails = () => {
     const {id} = useParams();
     const [item, setItem] = useAutoDetails(id);
 
-    // const [updated, setUpdated] = useState({});
-    // const { quantity } = item;
-    
-    // const handleRemoveOne = id => {
-    //     let newQuantity = quantity-1;
-    //     const newItem = {...item, quantity: newQuantity};
-    //     setItem(newQuantity);
-    //     const url = `https://arcane-reaches-25713.herokuapp.com/auto/${id}`
-    //     fetch(url, {
-    //         method: 'PUT',
-    //         headers: {
-    //             'content-type': 'application/json'
-    //         },
-    //         body: JSON.stringify(newItem)
-    //     })
-    //     .then(res => res.json())
-    //     .then(data => setItem(data))
-    // }
-
     return (
         <>
         <section className="text-gray-600 body-font">
