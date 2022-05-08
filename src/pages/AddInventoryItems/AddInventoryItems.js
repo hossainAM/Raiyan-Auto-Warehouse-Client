@@ -28,7 +28,7 @@ const AddInventoryItems = () => {
         }
 
         //post data//new collection and end point need to be created
-        const url = `http://localhost:5000/auto`
+        const url = `https://arcane-reaches-25713.herokuapp.com/auto`
         fetch(url, {
             method: 'POST',
             headers: {

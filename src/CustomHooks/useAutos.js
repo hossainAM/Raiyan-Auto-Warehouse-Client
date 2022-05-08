@@ -6,7 +6,7 @@ import {
 const useAutos = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/auto')
+        fetch('https://arcane-reaches-25713.herokuapp.com/auto')
             .then(res => res.json())
             .then(data => setItems(data))
     }, []);

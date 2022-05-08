@@ -10,6 +10,7 @@ import ManageInventory from './pages/ManageInventory/ManageInventory';
 import RequireAuth from './pages/Login/RequireAuth'
 import MyItems from './pages/MyItems/MyItems'
 import AddInventoryItems from './pages/AddInventoryItems/AddInventoryItems'
+import NotFound from './pages/NotFound/NotFound'
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path='/blog' element={<Blog/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<SignUp/>}/>
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
     </>
   )

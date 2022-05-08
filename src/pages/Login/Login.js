@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import axios from 'axios';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
@@ -33,18 +33,10 @@ const Login = () => {
         await signInWithEmailAndPassword(email, password);
         const {
             data
-        } = await axios.post('http://localhost:5000/login', {email});
+        } = await axios.post('https://arcane-reaches-25713.herokuapp.com/login', {email});
         localStorage.setItem('accessToken', data.accessToken);
         navigate(from, { replace: true });
     }
-
-//    useEffect(() => {
-// 		if(user) {
-// 		navigate(from, {
-// 			replace: true
-// 		});
-// 	}
-// 	}, [from, navigate, user])
 
     if(loading || sending) {
        return <Loader></Loader>

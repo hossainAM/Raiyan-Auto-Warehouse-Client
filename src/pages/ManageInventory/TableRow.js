@@ -1,22 +1,28 @@
-import React from 'react';
-import useAutos from '../../CustomHooks/useAutos';
+import React, { useEffect, useState } from 'react';
 
 const TableRow = ({ item, column }) => {
-     const [items, setItems] = useAutos([]);
 
+     const [items, setItems] = useState([]);
+     useEffect(() => {
+         fetch('https://arcane-reaches-25713.herokuapp.com/auto')
+             .then(res => res.json())
+             .then(data => setItems(data))
+     }, []);
+    
      //Remove item
     const handleRemove = id => {
         const isProceed = window.confirm('Are you sure you want to remove item');
         if(isProceed) {
-            const url = `http://localhost:5000/auto/${id}`
+            const url = `https://arcane-reaches-25713.herokuapp.com/auto/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
             .then(res => res.json())
             .then(data => {
-                console.log(id)
-                const rests = items.filter(item => item._id !== id);
-                setItems(rests);
+                if(data.deletedCount > 0){
+                    const rests = items.filter(item => item._id !== id);
+                    setItems(rests);
+                }
             })
         }
     }

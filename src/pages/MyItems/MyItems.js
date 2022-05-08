@@ -9,7 +9,7 @@ const MyItems = () => {
     useEffect(() => {
         const email = user.email;
         const getItems = async() => {
-            const url = `http://localhost:5000/newauto?email=${email}`
+            const url = `https://arcane-reaches-25713.herokuapp.com/newauto?email=${email}`
             const { data } = await axios.get(url, {
                 headers: {
                     authorization: `Bearer ${localStorage.getItem('accessToken')}`
