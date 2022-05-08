@@ -21,7 +21,6 @@ const InventoryDetails = () => {
                 <p className="title-font sm:text-2xl text-xl mb-4 font-medium text-gray-900">Price: <span className="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900">BDT{item.price}</span></p>
                 <p className="title-font sm:text-2xl text-xl mb-4 font-medium text-gray-900">Supplier: <span className="title-font sm:text-xl text-xl mb-4 font-medium text-gray-900">{item.supplier}</span></p>
                 <p className="title-font sm:text-2xl text-xl mb-4 font-medium text-gray-900"><span className="title-font sm:text-3xl text-2xl mb-4 font-bold text-gray-900">{item.quantity} </span>in Stock</p>
-                <p className="title-font sm:text-2xl text-xl mb-4 font-medium text-gray-900"><span className="title-font sm:text-3xl text-2xl mb-4 font-bold text-gray-900">2</span>Sold Out</p>
                 <div className="flex justify-center">
                     <button className="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg mr-3">Delivered</button>
                     <form action="#">
