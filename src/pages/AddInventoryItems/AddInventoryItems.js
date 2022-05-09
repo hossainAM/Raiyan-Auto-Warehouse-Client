@@ -27,7 +27,6 @@ const AddInventoryItems = () => {
             email, category, name, description, price, image, supplier, quantity
         }
 
-        //post data//new collection and end point need to be created
         const url = `https://arcane-reaches-25713.herokuapp.com/auto`
         fetch(url, {
             method: 'POST',
@@ -37,7 +36,7 @@ const AddInventoryItems = () => {
             body: JSON.stringify(newItem)
         })
         .then(res => res.json())
-        .then(data => console.log(data))//toast can be used 'new item is added';
+        .then(data => console.log(data))
 
         //clear input field
         categoryRef.current.value = '';
@@ -84,12 +83,12 @@ const AddInventoryItems = () => {
                         </div>
                         <div className='inputBox'>
                             <input ref={nameRef} className = 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-                            id="name" type="text" placeholder='
+                            id="modelName" type="text" placeholder='
                             Enter model name' required />
                         </div>
                         <div className='inputBox'>
                             <input ref={imgRef} className = 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
-                            id="imageURL" type="text" placeholder='
+                            id="image" type="text" placeholder='
                             Enter image url'/>
                         </div>
                         <div>

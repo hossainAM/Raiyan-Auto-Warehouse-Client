@@ -5,7 +5,7 @@ import TableRow from './TableRow';
 const Table = ({ data, column }) => {
     return (
         <>
-        <table>
+        <table className='container'>
             <thead>
                 <tr>
                     {

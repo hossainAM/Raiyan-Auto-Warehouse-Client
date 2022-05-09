@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Header from './shared/Header/Header'
 import Home from './pages/Home/Home'
@@ -11,8 +11,18 @@ import RequireAuth from './pages/Login/RequireAuth'
 import MyItems from './pages/MyItems/MyItems'
 import AddInventoryItems from './pages/AddInventoryItems/AddInventoryItems'
 import NotFound from './pages/NotFound/NotFound'
+import MobileView from './pages/ManageInventory/MobileView'
 
 const App = () => {
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const breakPoint = 640;
+
+  useEffect(() => {
+   const handleWindowResize = () => setWidth(window.innerWidth);
+   window.addEventListener("resize", handleWindowResize);
+
+   return () => window.removeEventListener("resize", handleWindowResize);
+  },[]);
 
   return (
     <>
@@ -24,7 +34,7 @@ const App = () => {
             <RequireAuth>
               <InventoryDetails/>
             </RequireAuth>}/>
-            <Route path='/manageinventory' element={<ManageInventory/>}/>
+            <Route path='/manageinventory' element={width > breakPoint ? <ManageInventory/> : <MobileView/>}/>
            < Route path = "/addinventory" element={<AddInventoryItems/>}/>
           <Route path='/myitems' element={
             <RequireAuth>

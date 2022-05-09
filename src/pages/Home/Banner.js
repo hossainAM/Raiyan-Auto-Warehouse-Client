@@ -11,8 +11,8 @@ const Banner = () => {
             }>
                 
             </div>
-            <div className='absolute top-1/3 left-1/4 space-y-4'>
-                <h1 className='sm:text-7xl text-4xl text-white uppercase'>Raiyan Auto</h1>
+            <div className='absolute top-1/3 sm:left-1/2 left-1/4 space-y-4'>
+                <h1 className='md:text-7xl text-4xl text-white uppercase'>Raiyan Auto</h1>
                 <h1 className='sm:text-7xl text-4xl text-white uppercase'>Warehouse</h1>
             </div>
         </div>

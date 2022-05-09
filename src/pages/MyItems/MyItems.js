@@ -20,7 +20,7 @@ const MyItems = () => {
         }
         getItems();
 
-    }, [user]);
+    }, [user, items]);
     return (
         <div>
             <div className = 'container grid sm:grid-cols-3 gap-5 mx-auto mt-6'>

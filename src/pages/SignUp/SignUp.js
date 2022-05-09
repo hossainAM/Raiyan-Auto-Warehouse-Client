@@ -19,7 +19,7 @@ const SignUp = () => {
     });
 
      //Email verification
-     const [sendEmailVerification, sending, VerificationError] = useSendEmailVerification(auth);
+     const [sendEmailVerification] = useSendEmailVerification(auth);
 
     //Profile update
     const [updateProfile] = useUpdateProfile(auth);
@@ -27,10 +27,6 @@ const SignUp = () => {
     const handleLogin = () => {
     navigate('/login')
     }
-
-    //  if (user) {
-    //      console.log('user', user);
-    //  }
 
     const handleSignup = async (e) => {
         e.preventDefault();
@@ -56,7 +52,7 @@ const SignUp = () => {
         <div className='formContainer'>
             <div className='containerCover'>
                  <div className='front'>
-                    <img src={'https://i.postimg.cc/zvmnfDkb/car-banner.png'} alt="" />
+                    <img src={'https://i.ibb.co/KqM0XKZ/car.jpg'} alt="" />
                     <div className='text'>
                         <span className='text-1'>Raiyan Auto Warehouse</span>
                     </div>

@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const TableRow = ({ item, column }) => {
+    //Reload- other options of reload like passing state array or reload state to dependency array didn't work here unlike other components; hence window reload method is used here;
+     function refreshPage() {
+         window.location.reload(false);
+     }
 
      const [items, setItems] = useState([]);
      useEffect(() => {
          fetch('https://arcane-reaches-25713.herokuapp.com/auto')
              .then(res => res.json())
              .then(data => setItems(data))
-     }, [items]);
+     }, []);
     
      //Remove item
     const handleRemove = id => {
@@ -23,6 +28,9 @@ const TableRow = ({ item, column }) => {
                     const rests = items.filter(item => item._id !== id);
                     setItems(rests);
                 }
+                if(data.deleteCount === 0){
+                    toast('Sold Out')
+                }
             })
         }
     }
@@ -37,7 +45,11 @@ const TableRow = ({ item, column }) => {
              <td>
                  <button onClick={() => handleRemove(item._id)} className="ml-3 inline-flex text-white bg-red-500 border-0 py-1 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Remove Item</button>
              </td>
+             <td>
+                 <button onClick={refreshPage} className="ml-3 inline-flex text-white bg-red-500 border-0 py-1 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Click to Reload!</button>
+             </td>
         </tr>
+        <Toaster/>
         </>
     );
 };

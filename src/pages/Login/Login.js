@@ -68,7 +68,7 @@ const Login = () => {
         <section className='contentWrapper'>
         <div className='formContainer'>
             <div className='containerCover'>
-                <img src={'https://i.postimg.cc/zvmnfDkb/car-banner.png'} alt="" />
+                <img src={'https://i.ibb.co/KqM0XKZ/car.jpg'} alt="" />
                 <div className='text'>
                     <span className='text-1'>Raiyan Auto Warehouse</span>
                 </div>

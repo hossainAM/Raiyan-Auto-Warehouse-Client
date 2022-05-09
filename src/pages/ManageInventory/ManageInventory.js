@@ -4,7 +4,7 @@ import useAutos from '../../CustomHooks/useAutos.js'
 import Table from './Table.js';
 
 const ManageInventory = () => {
-    const [items, setItems] = useAutos([]);
+    const [items] = useAutos([]);
     const navigate = useNavigate();
 
     const column = [
